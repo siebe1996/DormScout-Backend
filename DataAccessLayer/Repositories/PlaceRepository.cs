@@ -612,11 +612,12 @@ namespace DataAccessLayer.Repositories
 
             var oldDates = place.Dates.ToList();
 
-            if (patchPlaceModel.Dates != null && patchPlaceModel.Dates.Any())
+            /*if (patchPlaceModel.Dates != null && patchPlaceModel.Dates.Any())
             {
                 foreach (var date in patchPlaceModel.Dates)
                 {
-                    var existingDate = place.Dates.FirstOrDefault(d => d.Id == date.Id);
+                    PossibleDate existingDate = place.Dates.FirstOrDefault(d => d.Id == date.Id);
+                    var dateToCheck = existingDate;
                     if (existingDate == null)
                     {
                         place.Dates.Add(new PossibleDate
@@ -626,25 +627,60 @@ namespace DataAccessLayer.Repositories
                             UpdatedAt = DateTime.UtcNow,
                         });
                     }
-                    else if (existingDate != null && existingDate.Date != date.Date)
+                    else if (existingDate != null && existingDate.Id != Guid.Empty && existingDate.Date != date.Date)
                     {
                         existingDate.Date = date.Date;
                         existingDate.UpdatedAt = DateTime.UtcNow;
+                        oldDates.Remove(existingDate);
                     }
+                    else if (existingDate != null && existingDate.Id != Guid.Empty && existingDate.Date == date.Date)
+                    {
+                        oldDates.Remove(existingDate);
+                    }
+                }
+            }*/
+
+            foreach (var dateToRemove in oldDates)
+            {
+                place.Dates.Remove(dateToRemove);
+            }
+
+            if (patchPlaceModel.Dates != null)
+            {
+                foreach (var date in patchPlaceModel.Dates)
+                {
+                    place.Dates.Add(new PossibleDate
+                    {
+                        Date = date.Date,
+                        CreatedAt = DateTime.UtcNow,
+                        UpdatedAt = DateTime.UtcNow,
+                    });
                 }
             }
 
-            foreach (var oldDate in oldDates)
-            {
-                if (!patchPlaceModel.Dates.Any(d => d.Id == oldDate.Id))
-                {
-                    place.Dates.Remove(oldDate);
-                }
-            }
+            //toDo fix this maybe so dates get updated
 
             var oldNotes = place.Notes.ToList();
 
-            if (patchPlaceModel.Notes != null && patchPlaceModel.Notes.Any())
+            foreach (var oldNote in oldNotes)
+            {
+                place.Notes.Remove(oldNote);
+            }
+
+            if (patchPlaceModel.Notes != null)
+            {
+                foreach (var note in patchPlaceModel.Notes)
+                {
+                    place.Notes.Add(new Note
+                    {
+                        Content = note.Content,
+                        CreatedAt = DateTime.UtcNow,
+                        UpdatedAt = DateTime.UtcNow,
+                    });
+                }
+            }
+
+            /*if (patchPlaceModel.Notes != null && patchPlaceModel.Notes.Any())
             {
                 foreach(var note in patchPlaceModel.Notes)
                 {
@@ -671,11 +707,29 @@ namespace DataAccessLayer.Repositories
                 {
                     place.Notes.Remove(oldNote);
                 }
-            }
+            }*/
 
             var oldImages = place.Images.ToList();
 
-            if (patchPlaceModel.Images != null && patchPlaceModel.Images.Any())
+            foreach (var oldImage in oldImages)
+            {
+                place.Images.Remove(oldImage);
+            }
+
+            if (patchPlaceModel.Images != null)
+            {
+                foreach (var image in patchPlaceModel.Images)
+                {
+                    place.Images.Add(new PlaceImage
+                    {
+                        ImageData = image.ImageData,
+                        CreatedAt = DateTime.UtcNow,
+                        UpdatedAt = DateTime.UtcNow,
+                    });
+                }
+            }
+
+            /*if (patchPlaceModel.Images != null && patchPlaceModel.Images.Any())
             {
                 foreach (var image in patchPlaceModel.Images)
                 {
@@ -702,7 +756,7 @@ namespace DataAccessLayer.Repositories
                 {
                     place.Images.Remove(oldImage);
                 }
-            }
+            }*/
 
             await _context.SaveChangesAsync();
 

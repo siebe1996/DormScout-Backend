@@ -77,25 +77,28 @@ namespace Backend_DormScout
             service.Create(options);
 
             // Uncomment to seed data from txt files
-            using (var scope = app.Services.CreateScope())
+            /*using (var scope = app.Services.CreateScope())
             {
                 var services = scope.ServiceProvider;
                 SeedData.Initialize(services);
-            }
+            }*/
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {
-                app.UseSwagger();
-                app.UseSwaggerUI();
+                //app.UseSwagger();
+                //app.UseSwaggerUI();
                 // cors setting remove in production
-                app.UseCors("AllowAnyOrigins");
+      
                 //stripe payment
                 app.UseDeveloperExceptionPage();
             }
+            app.UseCors("AllowAnyOrigins");
+            app.UseSwagger();
+            app.UseSwaggerUI();
 
             // seriLogger
-            app.Use(async (context, next) =>
+            /*app.Use(async (context, next) =>
             {
                 // Log the request details here
                 var request = context.Request;
@@ -107,7 +110,7 @@ namespace Backend_DormScout
                 // Log the response details here
                 var response = context.Response;
                 Log.Information($"Outgoing response: {response.StatusCode}");
-            });
+            });*/
 
             app.UseHttpsRedirection();
 

@@ -15,3 +15,4 @@ C:\Users\siebe\Documents\odisee\3dejaar\Mobile application development\project\B
 C:\Users\siebe\Documents\odisee\3dejaar\Mobile application development\project\Backend_DormScout\Models\bin\Debug\net8.0\Globals.dll
 C:\Users\siebe\Documents\odisee\3dejaar\Mobile application development\project\Backend_DormScout\Models\bin\Debug\net8.0\Globals.pdb
 C:\Users\siebe\Documents\odisee\3dejaar\Mobile application development\project\Backend_DormScout\Models\obj\Debug\net8.0\Models.csproj.CopyComplete
+C:\Users\siebe\Documents\odisee\3dejaar\Mobile application development\project\Backend_DormScout\Models\obj\Debug\net8.0\Models.sourcelink.json

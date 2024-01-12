@@ -17,3 +17,4 @@ C:\Users\siebe\Documents\odisee\3dejaar\Mobile application development\project\B
 C:\Users\siebe\Documents\odisee\3dejaar\Mobile application development\project\Backend_DormScout\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.pdb
 C:\Users\siebe\Documents\odisee\3dejaar\Mobile application development\project\Backend_DormScout\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.genruntimeconfig.cache
 C:\Users\siebe\Documents\odisee\3dejaar\Mobile application development\project\Backend_DormScout\DataAccessLayer\obj\Debug\net8.0\ref\DataAccessLayer.dll
+C:\Users\siebe\Documents\odisee\3dejaar\Mobile application development\project\Backend_DormScout\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.sourcelink.json

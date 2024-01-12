@@ -1,0 +1,15 @@
+C:\Users\siebe\Documents\odisee\3dejaar\Mobile application development\project\Backend_DormScout\Globals\bin\Release\net8.0\Globals.deps.json
+C:\Users\siebe\Documents\odisee\3dejaar\Mobile application development\project\Backend_DormScout\Globals\bin\Release\net8.0\Globals.runtimeconfig.json
+C:\Users\siebe\Documents\odisee\3dejaar\Mobile application development\project\Backend_DormScout\Globals\bin\Release\net8.0\Globals.dll
+C:\Users\siebe\Documents\odisee\3dejaar\Mobile application development\project\Backend_DormScout\Globals\bin\Release\net8.0\Globals.pdb
+C:\Users\siebe\Documents\odisee\3dejaar\Mobile application development\project\Backend_DormScout\Globals\obj\Release\net8.0\Globals.csproj.AssemblyReference.cache
+C:\Users\siebe\Documents\odisee\3dejaar\Mobile application development\project\Backend_DormScout\Globals\obj\Release\net8.0\Globals.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\siebe\Documents\odisee\3dejaar\Mobile application development\project\Backend_DormScout\Globals\obj\Release\net8.0\Globals.AssemblyInfoInputs.cache
+C:\Users\siebe\Documents\odisee\3dejaar\Mobile application development\project\Backend_DormScout\Globals\obj\Release\net8.0\Globals.AssemblyInfo.cs
+C:\Users\siebe\Documents\odisee\3dejaar\Mobile application development\project\Backend_DormScout\Globals\obj\Release\net8.0\Globals.csproj.CoreCompileInputs.cache
+C:\Users\siebe\Documents\odisee\3dejaar\Mobile application development\project\Backend_DormScout\Globals\obj\Release\net8.0\Globals.sourcelink.json
+C:\Users\siebe\Documents\odisee\3dejaar\Mobile application development\project\Backend_DormScout\Globals\obj\Release\net8.0\Globals.dll
+C:\Users\siebe\Documents\odisee\3dejaar\Mobile application development\project\Backend_DormScout\Globals\obj\Release\net8.0\refint\Globals.dll
+C:\Users\siebe\Documents\odisee\3dejaar\Mobile application development\project\Backend_DormScout\Globals\obj\Release\net8.0\Globals.pdb
+C:\Users\siebe\Documents\odisee\3dejaar\Mobile application development\project\Backend_DormScout\Globals\obj\Release\net8.0\Globals.genruntimeconfig.cache
+C:\Users\siebe\Documents\odisee\3dejaar\Mobile application development\project\Backend_DormScout\Globals\obj\Release\net8.0\ref\Globals.dll
